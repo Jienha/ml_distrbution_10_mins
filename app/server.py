@@ -14,7 +14,7 @@ class_names = np.array(['setosa', 'versicolor', 'virginica'])
 app = FastAPI()
 
 @app.get('/')
-def reed_rood():
+def read_rood():
     return {'message': 'Iris model API'}
 
 @app.post('/predict')
