@@ -13,6 +13,9 @@ RUN pip install --no-cache-dir -r /code/requirements.txt
 # 5. Copy our application folder inside our working directory code:
 COPY ./app /code/app
 
+# 5. Copy our models folder inside our working directory code:
+COPY ./models /code/models
+
 # 6 expose some port because this is an isolated environment
 # So we expose some endpoint where we can send the data or we can interact with this container
 EXPOSE 8000

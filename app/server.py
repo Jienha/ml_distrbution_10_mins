@@ -2,12 +2,10 @@ from fastapi import FastAPI
 import joblib
 import os
 import numpy as np
-from paths import PathRegistry
 
-PATH = PathRegistry.paths()
 MODEL_SERIE = 'iris_cls_1.joblib'
 
-model = joblib.load(os.path.join(PATH['models'], MODEL_SERIE))
+model = joblib.load('models/{}'.format(MODEL_SERIE))
 
 class_names = np.array(['setosa', 'versicolor', 'virginica'])
 
