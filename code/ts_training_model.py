@@ -136,8 +136,8 @@ filtered['model_pred'] = y_estim
 filtered_train = filtered[filtered['class'] == 'train']
 filtered_test = filtered[filtered['class'] == 'test']
 
-# plt.plot(filtered['sales'], alpha=0.5, label='original')
-# plt.plot(filtered_train['model_pred'],color='C0', label='train')
-# plt.plot(filtered_test['model_pred'],color='C3', label='test')
-# plt.legend()
-# plt.show()
+plt.plot(filtered['sales'], alpha=0.5, label='original')
+plt.plot(filtered_train['model_pred'],color='C0', label='train')
+plt.plot(filtered_test['model_pred'],color='C3', label='test')
+plt.legend()
+plt.show()
